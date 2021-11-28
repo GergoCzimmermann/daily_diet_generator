@@ -8,7 +8,7 @@ const randomArrayElement = array =>
 //let trialArray = ["alma", "béta","gamma","kappa"];
 //console.log(randomArrayElement(trialArray)); // check if we can select a random element
 
-//------------------------------------------------------------------------------------------
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // List all the foods
 const foodsObject = {
     breakfast: ["tojásrántotta", "zabkása"],
@@ -20,6 +20,18 @@ const foodsObject = {
 //console.log(foodsObject.breakfast);
 
 //------------------------------------------------------------------------------------------
+// List all the greetings:
+const greetingArray = ["Örülök, hogy látlak!", "De jó újra találkozni!", "Hát újabb nap érkezett el!"]
+
+//------------------------------------------------------------------------------------------
+// List all the motivations:
+const motivationArray = ["Még egy erős nap", "Kitartást a mai naphoz is", "Fogod tudni tartani ma is a diétát látom!", "No pain, no Gain!", "Dig deeper!"]
+
+//------------------------------------------------------------------------------------------
+// List all the smileis:
+const smileis = [":)", ":D", ":P", "XD", ";D", ";)"]
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // creat a random daily diet based on the input food list
 const randomDietGenerator= foods => {
     const dailyDietObj = {
@@ -39,11 +51,12 @@ const randomDietGenerator= foods => {
     return dailyDietObj;
 }
 
-//------------------------------------------------------------------------------------------
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // console.log(randomDietGenerator(foodsObject)); // test the diet generator
 
 const dailyDiet= randomDietGenerator(foodsObject);
-console.log("Szia! Örülök, hogy látlak! A napi étrend a következő:")
+console.log("Szia! "+ randomArrayElement(greetingArray)+ " " + randomArrayElement(motivationArray) + " " + randomArrayElement(smileis));
+console.log("A napi étrended a következő:");
 console.log("Reggeli: " + dailyDiet.breakfast);
 console.log("Tízórai: " + dailyDiet.tenHourLunch);
 console.log("Ebéd: " + dailyDiet.lunch);
