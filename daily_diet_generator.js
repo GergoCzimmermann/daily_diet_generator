@@ -25,7 +25,7 @@ const greetingArray = ["Örülök, hogy látlak!", "De jó újra találkozni!", 
 
 //------------------------------------------------------------------------------------------
 // List all the motivations:
-const motivationArray = ["Még egy erős nap", "Kitartást a mai naphoz is", "Fogod tudni tartani ma is a diétát látom!", "No pain, no Gain!", "Dig deeper!"]
+const motivationArray = ["Még egy erős nap!", "Kitartást a mai naphoz is!", "Fogod tudni tartani ma is a diétát látom!", "No pain, no Gain!", "Dig deeper!"]
 
 //------------------------------------------------------------------------------------------
 // List all the smileis:
